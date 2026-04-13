@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	TAHMID RAYAT 
@@ -200,33 +200,35 @@ check_status() {
 	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && check_update || echo -e "${RED}Offline${WHITE}"
 }
 
-## Banner
+## Small Banner
 banner() {
-	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
-
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
-	EOF
+    clear
+    cat << EOF
+${ORANGE}
+  ____   ___  ____ ____    _____ _   _    _    _     _ 
+ | __ ) / _ \/ ___/ ___|  | ____| \ | |  / \  | |   | |
+ |  _ \| | | \___ \___ \  |  _| |  \| | / _ \ | |   | |
+ | |_) | |_| |___) |___) | |___| |\  |/ ___ \| |___| |
+ |____/ \___/|____/____/  |_____|_| \_/_/   \_\_____|_|
+ 
+${GREEN}       >>> BOSS ENAFUL <<<
+EOF
 }
 
 ## Small Banner
 banner_small() {
-	cat <<- EOF
-		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
-	EOF
-}
+    cat << EOF
+${BLUE}
+  _  ___ _   _  ____    _____ _   _    _    _     _ 
+ | |/ /_ _| \ | |/ ___|  | ____| \ | |  / \  | |   | |
+ | ' / | ||  \| | |  _   |  _| |  \| | / _ \ | |   | |
+ | . \ | || |\  | |_| |  | |___| |\  |/ ___ \| |___| |
+ |_|\_\___|_| \_|\____|  |_____|_| \_/_/   \_\_____|_|
 
+${CYAN}       >>> KING ENAFUL <<<
+EOF
+}
+	
 ## Dependencies
 dependencies() {
 	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
